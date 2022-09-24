@@ -1,0 +1,15 @@
+h1 {
+  font-family: mundial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-family: mundial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.bold {
+  font-weight: 600;
+}
