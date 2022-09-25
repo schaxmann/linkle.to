@@ -1,4 +1,5 @@
 import "../styling/Header.css";
+import Embed from "./Embed";
 
 function Header() {
   return (
@@ -17,6 +18,7 @@ function Header() {
         <span className="bold">completely free</span>
       </h2>
       {/* <h2>internet playlists</h2> */}
+      {/* <Embed /> */}
     </header>
   );
 }
