@@ -8,6 +8,7 @@ function Header() {
         bringing <span className="bold">order</span> to the{" "}
         <span className="bold">chaos</span>
       </h2>
+      {/* <h2>internet playlists</h2> */}
     </header>
   );
 }
