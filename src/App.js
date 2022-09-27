@@ -1,13 +1,20 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Embed from "./components/Embed";
 import Header from "./components/Header";
 import Splash from "./components/Splash";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Splash />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Splash />
+        <Routes>
+          <Route path="list" element={<Embed />}></Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -10,7 +10,6 @@ function Splash() {
         share a collection of resources, a learning pathway, or any other
         ordered sequence of websites with someone? you're in the right place.
       </p>
-      <Embed />
     </main>
   );
 }

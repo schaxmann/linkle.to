@@ -1,20 +1,20 @@
 import "../styling/Embed.css";
 import React, { useState, useEffect, useRef } from "react";
-import { useScrollPercentage } from "react-scroll-percentage";
-import IframeResizer from "iframe-resizer-react";
+// import { useScrollPercentage } from "react-scroll-percentage";
+// import IframeResizer from "iframe-resizer-react";
 
 function Embed() {
-  const [height, setHeight] = useState(0);
-  const [ref, percentage] = useScrollPercentage();
-  const iframeRef = useRef(null);
-  const [messageData, setMessageData] = useState("");
+  //   const [height, setHeight] = useState(0);
+  //   const [ref, percentage] = useScrollPercentage();
+  //   const iframeRef = useRef(null);
+  //   const [messageData, setMessageData] = useState("");
 
-  const onResized = (data) => setMessageData(data);
+  //   const onResized = (data) => setMessageData(data);
 
-  const onMessage = (data) => {
-    setMessageData(data);
-    iframeRef.current.sendMessage("Hello back from the parent page");
-  };
+  //   const onMessage = (data) => {
+  //     setMessageData(data);
+  //     iframeRef.current.sendMessage("Hello back from the parent page");
+  //   };
 
   return (
     <div className="embed">
