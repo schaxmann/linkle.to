@@ -1,5 +1,4 @@
 import "../styling/Header.css";
-import Embed from "./Embed";
 
 function Header() {
   return (
