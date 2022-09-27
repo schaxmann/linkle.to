@@ -1,5 +1,5 @@
 import "../styling/LinkList.css";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import Embed from "./Embed";
 
 function LinkList() {
