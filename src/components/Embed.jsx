@@ -18,14 +18,10 @@ function Embed() {
 
   return (
     <div className="embed">
-      <p> Scrolled {percentage}</p>
+      {/* <p> Scrolled {percentage}</p> */}
       {/* <embed ref={ref} src="https://standforukraine.com/"></embed> */}
       {/* <embed src="https://riseofukraine.com/" width={1000} height={500}></embed> */}
-      <embed
-        src="https://supportukrainenow.org/"
-        width={"50%"}
-        height={"100%"}
-      ></embed>
+      <embed src="https://supportukrainenow.org/"></embed>
 
       {/* <IframeResizer
         forwardRef={iframeRef}

@@ -1,0 +1,14 @@
+.embed {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 99.42%;
+  width: 50%;
+  border: 0;
+}
+
+embed {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
