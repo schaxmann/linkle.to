@@ -20,6 +20,7 @@ function App() {
             }
           ></Route>
           <Route path="list" element={<LinkList />}></Route>
+          {/* <Route path="list/:linkID" element={<Embed />}></Route> */}
         </Routes>
       </div>
     </BrowserRouter>

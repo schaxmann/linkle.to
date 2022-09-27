@@ -3,7 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 // import { useScrollPercentage } from "react-scroll-percentage";
 // import IframeResizer from "iframe-resizer-react";
 
-function Embed() {
+function Embed(props) {
+  const { CurrentLink } = props;
   //   const [height, setHeight] = useState(0);
   //   const [ref, percentage] = useScrollPercentage();
   //   const iframeRef = useRef(null);
@@ -21,7 +22,7 @@ function Embed() {
       {/* <p> Scrolled {percentage}</p> */}
       {/* <embed ref={ref} src="https://standforukraine.com/"></embed> */}
       {/* <embed src="https://riseofukraine.com/" width={1000} height={500}></embed> */}
-      <embed src="https://supportukrainenow.org/"></embed>
+      <embed src={CurrentLink}></embed>
 
       {/* <IframeResizer
         forwardRef={iframeRef}
