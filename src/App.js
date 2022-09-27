@@ -8,9 +8,16 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
-        <Splash />
         <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Splash />
+              </>
+            }
+          ></Route>
           <Route path="list" element={<Embed />}></Route>
         </Routes>
       </div>

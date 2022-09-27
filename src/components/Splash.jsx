@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import "../styling/Splash.css";
 import Embed from "./Embed";
 
 function Splash() {
+  const navigate = useNavigate();
   return (
     <main>
       <h3>what is linkle.to?</h3>
@@ -10,6 +12,13 @@ function Splash() {
         share a collection of resources, a learning pathway, or any other
         ordered sequence of websites with someone? you're in the right place.
       </p>
+      <button
+        onClick={() => {
+          navigate("/list");
+        }}
+      >
+        View LinkList
+      </button>
     </main>
   );
 }
