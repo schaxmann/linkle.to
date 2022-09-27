@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import "../styling/Splash.css";
-import Embed from "./Embed";
 
 function Splash() {
   const navigate = useNavigate();
