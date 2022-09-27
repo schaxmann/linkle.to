@@ -1,9 +1,6 @@
 import "../styling/LinkList.css";
 import React, { useState, useEffect, useRef } from "react";
 import Embed from "./Embed";
-import { Link, useNavigate } from "react-router-dom";
-// import { useScrollPercentage } from "react-scroll-percentage";
-// import IframeResizer from "iframe-resizer-react";
 
 function LinkList() {
   const [ListArr, SetListArr] = useState([
@@ -12,7 +9,6 @@ function LinkList() {
     { siteName: "Site 3", URL: "https://supportukrainenow.org/", linkID: 3 },
   ]);
   const [CurrentLink, SetCurrentLink] = useState(ListArr[0].URL);
-  const navigate = useNavigate();
 
   return (
     <div className="LinkList">
@@ -23,8 +19,7 @@ function LinkList() {
             return (
               <li key={link.linkID} className="siteLink">
                 <button
-                  onClick={(event) => {
-                    console.log(link.URL);
+                  onClick={() => {
                     SetCurrentLink(link.URL);
                   }}
                 >
@@ -43,11 +38,3 @@ function LinkList() {
 export default LinkList;
 
 // TODO Sort out overflow on 100% height
-
-{
-  /* <embed ref={ref} src="https://standforukraine.com/"></embed> */
-}
-{
-  /* <embed src="https://riseofukraine.com/" width={1000} height={500}></embed> */
-}
-<embed src="https://supportukrainenow.org/"></embed>;
