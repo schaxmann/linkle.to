@@ -7,8 +7,8 @@ import reportWebVitals from "./reportWebVitals";
 import * as AWS from "aws-sdk";
 
 const configuration = {
-  secretAccessKey: "icHCERncEg3i15oLe5jnlTSpn4HNVz/JwLDh/at1",
-  accessKeyId: "AKIAT3WO42NHNFUECKU2",
+  secretAccessKey: "",
+  accessKeyId: "",
 };
 
 AWS.config.update(configuration);
