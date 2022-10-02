@@ -1,7 +1,6 @@
 import "../styling/LinkList.css";
 import React, { useState } from "react";
 import Embed from "./Embed";
-import * as AWS from "aws-sdk";
 
 function LinkList() {
   const [ListArr, SetListArr] = useState([
@@ -10,38 +9,6 @@ function LinkList() {
     { siteName: "Site 3", URL: "https://supportukrainenow.org/", linkID: 3 },
   ]);
   const [CurrentLink, SetCurrentLink] = useState(ListArr[0].URL);
-
-  const docClient = new AWS.DynamoDB.DocumentClient();
-
-  const fetchData = (tableName) => {
-    var params = {
-      TableName: "linkle.to",
-    };
-
-    docClient.scan(params, function (err, data) {
-      if (!err) {
-        console.log(data);
-      }
-    });
-  };
-
-  console.log(fetchData("URLs"));
-
-  // console.log(AWS.env.REACT_APP_GOOGLE_API_KEY);
-
-  // const docClient = new AWS.DynamoDB.DocumentClient();
-
-  // const fetchData = (tableName) => {
-  //   var params = {
-  //     TableName: linkle.to,
-  //   };
-
-  //   docClient.scan(params, function (err, data) {
-  //     if (!err) {
-  //       console.log(data);
-  //     }
-  //   });
-  // };
 
   return (
     <div className="LinkList">
